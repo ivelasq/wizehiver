@@ -16,7 +16,15 @@ knitr::opts_chunk$set(
 
 [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver)
 
-The goal of wizehiver is to ...
+Zengine from WizeHive is a platform that can organize the collection, review, and management of applications and data for grants and other business processes. This package is not affiliated with the company and has no relationship or affiliation with, sponsorship or endorsement by Zengine.
+
+The goal of wizehiver is to build functionality to:
+
+1. Input Zengine RESTful API token for Wizehive
+2. Input available API resources
+3. Execute API call
+4. Process API request content
+5. Extract data_frame objects
 
 ## Installation
 
@@ -39,21 +47,6 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 ## basic example code
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
 
 ---
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
