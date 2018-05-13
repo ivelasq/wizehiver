@@ -5,7 +5,7 @@ wizehiver
 
 [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver)
 
-Zengine from WizeHive is a platform that can organize the collection, review, and management of applications and data for grants and other business processes. This package is not affiliated with the company and has no relationship or affiliation with, sponsorship or endorsement by Zengine.
+Zengine from WizeHive is a platform that can organize the collection, review, and management of applications and data for grants and other business processes.
 
 The goal of wizehiver is to build functionality to:
 
@@ -14,6 +14,8 @@ The goal of wizehiver is to build functionality to:
 3.  Execute API call
 4.  Process API request content
 5.  Extract data\_frame objects
+
+This package is not affiliated with the company and has no relationship or affiliation with, sponsorship or endorsement by Zengine.
 
 Installation
 ------------
