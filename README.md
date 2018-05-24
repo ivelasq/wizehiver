@@ -11,7 +11,7 @@ The goal of wizehiver is to build functionality to:
 
 1.  Input and manage Zengine™ RESTful API tokens
 2.  Input available API resources
-3.  Execute API call
+3.  Execute API calls
 4.  Process API request content
 5.  Extract tibbles
 
