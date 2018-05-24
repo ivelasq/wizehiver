@@ -3,43 +3,28 @@
 wizehiver
 =========
 
-[![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver)
+[![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-Zengine from WizeHive is a platform that can organize the collection, review, and management of applications and data for grants and other business processes.
+Zengine™ from WizeHive is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes.
 
 The goal of wizehiver is to build functionality to:
 
-1.  Input Zengine RESTful API token for Wizehive
+1.  Input and manage Zengine™ RESTful API tokens
 2.  Input available API resources
-3.  Execute API call
+3.  Execute API calls
 4.  Process API request content
-5.  Extract data\_frame objects
+5.  Extract tibbles
 
-This package has no relationship or affiliation with, sponsorship or endorsement by Zengine.
+This package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.
 
 Installation
 ------------
 
-You can install the released version of wizehiver from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("wizehiver")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install the development version of wizehiver from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("ivelasq/wizehiver")
-```
-
-Example
--------
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
 ```
 
 ------------------------------------------------------------------------
