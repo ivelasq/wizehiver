@@ -5,7 +5,7 @@
 #' @export get_token set_token get_key set_key
 #'
 #' @description
-#' These functions retrieve and store your Zengine™ API key and personal access token (PAT) in \code{.Renviron}, with help from \code{usethis::\link[usethis]{edit_r_environ()}}.
+#' These functions retrieve and store your Zengine™ API key and personal access token (PAT) in \code{.Renviron}, with help from \code{usethis::edit_r_environ()}.
 #' @usage
 #' get_key()
 #' set_key()
@@ -22,7 +22,7 @@ get_token <- function() {
   }
   if (identical(get_local_token(), "")) {
     message("ZENGINE_PAT has not been set")
-    answer <- askYesNo("Do you want to set ZENGINE_PAT?")
+    answer <- utils::askYesNo("Do you want to set ZENGINE_PAT?")
     if (isTRUE(answer)) {
       set_token()
     }
@@ -50,7 +50,7 @@ get_key <- function() {
   }
   if (identical(get_local_key(), "")) {
     message("ZENGINE_KEY has not been set")
-    answer <- askYesNo("Do you want to set ZENGINE_KEY?")
+    answer <- utils::askYesNo("Do you want to set ZENGINE_KEY?")
     if (isTRUE(answer)) {
       set_key()
     }

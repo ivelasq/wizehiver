@@ -19,5 +19,5 @@ set_token()
 \code{set_key()} and \code{set_token()} invisibly return \code{NULL}.
 }
 \description{
-These functions retrieve and store your Zengine™ API key and personal access token (PAT) in \code{.Renviron}, with help from \code{usethis::\link[usethis]{edit_r_environ()}}.
+These functions retrieve and store your Zengine™ API key and personal access token (PAT) in \code{.Renviron}, with help from \code{usethis::edit_r_environ()}.
 }
