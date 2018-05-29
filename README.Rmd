@@ -38,6 +38,18 @@ You can install the development version of wizehiver from [GitHub](https://githu
 devtools::install_github("ivelasq/wizehiver")
 ```
 
+## Setup
+
+### Get and store the API key
+
+Generate the airtable API key from your Zen account page.
+
+wizehiver functions will read the API key from environment variable ZENGINE_KEY. 
+
+To verify your Zengine API key, check using function `get_key()`. If your Zengine API key is not stored in `.Renviron`, you will be able to create an .Renviron file in your home directory with a line like this:
+
+`ZENGINE_KEY=your_api_key_here`
+
 ---
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this project you agree to abide by its terms.
