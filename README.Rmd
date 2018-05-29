@@ -42,13 +42,13 @@ devtools::install_github("ivelasq/wizehiver")
 
 ### Get and store the API key
 
-Generate the airtable API key from your Zen account page.
+Generate the Zengine API key from your [Zengine account page](https://platform.zenginehq.com/account/developer).
 
 wizehiver functions will read the API key from environment variable ZENGINE_KEY. 
 
 To verify your Zengine API key, check using function `get_key()`. If your Zengine API key is not stored in `.Renviron`, you will be able to create an .Renviron file in your home directory with a line like this:
 
-`ZENGINE_KEY=your_api_key_here`
+`ZENGINE_KEY=ABC123XYZ`
 
 ---
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
