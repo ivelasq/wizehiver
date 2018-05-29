@@ -36,9 +36,7 @@ Generate the Zengine API key from your [Zengine account page](https://platform.z
 
 wizehiver functions will read the API key from environment variable ZENGINE\_KEY.
 
-To verify your Zengine API key, check using function `get_key()`. If your Zengine API key is not stored in `.Renviron`, you will be able to create an .Renviron file in your home directory with a line like this:
-
-`ZENGINE_KEY=ABC123XYZ`
+To verify your Zengine API key, use function `get_key()`. If your Zengine API key is not stored in `.Renviron`, you will be able to create an .Renviron file in your home directory using function `set_key`.
 
 ------------------------------------------------------------------------
 
