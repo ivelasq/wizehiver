@@ -1,8 +1,11 @@
 Package: wizehiver
-Title: What the Package Does (One Line, Title Case)
+Title: wizehiver: An R Wrapper for WizeHive's Zengine API
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", , "first.last@example.com", c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Isabella", "Velásquez", email = "first.last@example.com", role = c("aut", "cre")),
+    person("Gustavo", "Velásquez", email = "gvelasq2github@gmail.com", role = "aut")
+    )
+Description: An R wrapper for WizeHive's Zengine API.
 License: MIT + file LICENSE
 Imports: 
     cli,
