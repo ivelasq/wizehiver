@@ -6,7 +6,7 @@
 \alias{set_token}
 \alias{get_key}
 \alias{set_key}
-\title{Manage Zengine™ API key and PAT}
+\title{Manage Zengine API key and PAT}
 \usage{
 get_key()
 set_key()
@@ -14,10 +14,10 @@ get_token()
 set_token()
 }
 \value{
-\code{get_key()} and \code{get_token()} return a character vector with the Zengine™ API key and PAT stored in \code{.Renviron}, respectively. If these values are not stored in \code{.Renviron}, the functions return \code{NULL}.
+\code{get_key()} and \code{get_token()} return a character vector with the Zengine API key and PAT stored in \code{.Renviron}, respectively. If these values are not stored in \code{.Renviron}, the functions return \code{NULL}.
 
 \code{set_key()} and \code{set_token()} invisibly return \code{NULL}.
 }
 \description{
-These functions retrieve and store your Zengine™ API key and personal access token (PAT) in \code{.Renviron}, with help from \code{usethis::edit_r_environ()}.
+These functions manage your Zengine API key and personal access token (PAT) in \code{.Renviron}.
 }
