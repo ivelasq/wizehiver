@@ -1,6 +1,6 @@
 #' Manage Zengine API key and PAT
 #'
-#' @name auth-helpers
+#' @name auth
 #' @aliases get_token set_token get_key set_key
 #' @export get_token set_token get_key set_key
 #'
@@ -13,9 +13,9 @@
 #' set_token()
 #'
 #' @return
-#' \code{get_key()} and \code{get_token()} return a character vector with the Zengine API key and PAT stored in \code{.Renviron}, respectively. If these values are not stored in \code{.Renviron}, the functions return \code{NULL}.
+#' `get_key()` and `get_token()` return a character vector with the Zengine API key and PAT stored in `.Renviron`, respectively. If these values are not stored in `.Renviron`, the functions return `NULL`.
 #'
-#' \code{set_key()} and \code{set_token()} invisibly return \code{NULL}.
+#' `set_key()` and `set_token()` invisibly return `NULL`.
 get_token <- function() {
   if (is.null(get_local_token())) {
     set_local_token(Sys.getenv("ZENGINE_PAT"))
