@@ -17,6 +17,7 @@
 #' @return
 #' A list of class `zengine`.
 get_zen <- function(resource, id = NULL, record = NULL, limit = NULL) {
+  ua <- httr::user_agent("https://github.com/ivelasq/wizehiver")
   path <- paste0("/v1/", resource)
   if (is.null(id) && !is.null(record)) {
     stop("Zengine API requires a non-null id when calling record", call. = FALSE)
@@ -32,7 +33,7 @@ get_zen <- function(resource, id = NULL, record = NULL, limit = NULL) {
     path <- paste0(path, "&limit=", limit)
   }
   url <- httr::modify_url("https://api.zenginehq.com/", path = path)
-  resp <- httr::GET(url)
+  resp <- httr::GET(url, ua)
   if (httr::http_type(resp) != "application/json") {
     stop("Zengine API did not return a json object", call. = FALSE)
   }
