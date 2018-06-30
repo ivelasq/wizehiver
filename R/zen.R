@@ -45,8 +45,8 @@ get_zen <- function(resource, id = NULL, record = NULL, limit = NULL) {
       sprintf(
         "Zengine API request failed [%s]\n%s\n<%s>",
         httr::status_code(resp),
-        parsed$message,
-        parsed$documentation_url
+        parsed$developerMessage,
+        "https://zenginehq.github.io/developers/rest-api"
       ),
       call. = FALSE
     )
