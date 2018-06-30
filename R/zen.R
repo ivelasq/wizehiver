@@ -23,7 +23,7 @@ get_zen <- function(resource, id = NULL, record = NULL, limit = NULL) {
     stop("Zengine API requires a non-null id when calling record", call. = FALSE)
   }
   if (!is.null(id)) {
-    path <- paste0(path, "/", id, "records")
+    path <- paste0(path, "/", id, "/records")
     if (!is.null(record)) {
       path <- paste0(path, "/", record)
     }
