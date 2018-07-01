@@ -2,5 +2,6 @@
 
 export(get_key)
 export(get_token)
+export(get_zen)
 export(set_key)
 export(set_token)
