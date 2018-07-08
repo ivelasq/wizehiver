@@ -19,8 +19,9 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
-<<<<<<< HEAD
 Depends: R (>= 3.5)
+<<<<<<< HEAD
+
 =======
 Suggests: 
     roomba,
