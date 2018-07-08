@@ -1,6 +1,6 @@
 #' Manage Zengine API key and PAT
 #'
-#' @name auth-helpers
+#' @name auth
 #' @aliases get_token set_token get_key set_key
 #' @export get_token set_token get_key set_key
 #'
@@ -13,9 +13,9 @@
 #' set_token()
 #'
 #' @return
-#' \code{get_key()} and \code{get_token()} return a character vector with the Zengine API key and PAT stored in \code{.Renviron}, respectively. If these values are not stored in \code{.Renviron}, the functions return \code{NULL}.
+#' `get_key()` and `get_token()` return a character vector with the Zengine API key and PAT stored in `.Renviron`, respectively. If these values are not stored in `.Renviron`, the functions return `NULL`.
 #'
-#' \code{set_key()} and \code{set_token()} invisibly return \code{NULL}.
+#' `set_key()` and `set_token()` invisibly return `NULL`.
 get_token <- function() {
   if (is.null(get_local_token())) {
     set_local_token(Sys.getenv("ZENGINE_PAT"))
@@ -31,14 +31,15 @@ get_token <- function() {
     }
   }
   else {
-    print(get_local_token())
+    cli::cat_bullet(paste0("ZENGINE_PAT was found in ", color_blue("'.Renviron'"), " and was invisibly returned"), bullet = "tick", bullet_col = "green")
+    invisible(get_local_token())
   }
 }
 
 set_token <- function() {
   cli::cat_bullet(paste0("Calling ", color_grey("`usethis::edit_r_environ()`"), " to open ", color_blue("'.Renviron'")), bullet = "tick", bullet_col = "green")
   usethis::edit_r_environ()
-  cli::cat_bullet(paste0(color_blue("'.Renviron'"), "must end with a newline"), bullet_col = "red")
+  cli::cat_bullet(paste0(color_blue("'.Renviron'"), " must end with a newline"), bullet_col = "red")
   cli::cat_bullet("Store your Zengine personal access token (PAT), see example below:", bullet_col = "red")
   message("ZENGINE_PAT=ABC123XYZ")
   invisible(NULL)
@@ -59,14 +60,15 @@ get_key <- function() {
     }
   }
   else {
-    print(get_local_key())
+    cli::cat_bullet(paste0("ZENGINE_KEY was found in ", color_blue("'.Renviron'"), " and was invisibly returned"), bullet = "tick", bullet_col = "green")
+    invisible(get_local_key())
   }
 }
 
 set_key <- function() {
   cli::cat_bullet(paste0("Calling ", color_grey("`usethis::edit_r_environ()`"), " to open ", color_blue("'.Renviron'")), bullet = "tick", bullet_col = "green")
   usethis::edit_r_environ()
-  cli::cat_bullet(paste0(color_blue("'.Renviron'"), "must end with a newline"), bullet_col = "red")
+  cli::cat_bullet(paste0(color_blue("'.Renviron'"), " must end with a newline"), bullet_col = "red")
   cli::cat_bullet("Store your Zengine API key, see example below:", bullet_col = "red")
   message("ZENGINE_KEY=ABC123XYZ")
   invisible(NULL)
