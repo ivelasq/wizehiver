@@ -3,7 +3,7 @@
 wizehiver
 =========
 
-[![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver)
 
 Zengine™ from WizeHive is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes.
 
