@@ -3,7 +3,7 @@
 wizehiver
 =========
 
-[![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver) [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver) [![Coverage Status](https://img.shields.io/codecov/c/github/ivelasq/wizehiver/master.svg)](https://codecov.io/github/ivelasq/wizehiver?branch=master) [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 Zengine™ from WizeHive is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes.
 
