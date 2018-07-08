@@ -21,12 +21,8 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
-<<<<<<< HEAD
-
-=======
 Suggests: 
     roomba,
     testthat
 Remotes: 
     ropenscilabs/roomba
->>>>>>> 144b1153ed45c605c4ea7a7fae8514683fdf5c43
