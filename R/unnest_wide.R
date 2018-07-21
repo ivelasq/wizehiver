@@ -7,9 +7,9 @@
 #' @description
 #' `unnest_wide()` unnests all list-cols in a data frame into atomic columns for each unique element in a list-col. Unnested columns are appended to the end of the dataset, and are distinguished by concatenating an underscore and a sequential number to the original list-col name.
 #' @usage
-#' unnest_wide(df)
+#' unnest_wide(.data)
 #'
-#' @param df A data frame.
+#' @param .data A data frame.
 #'
 #' @return
 #' A tibble.

@@ -4,10 +4,10 @@
 \alias{unnest_wide}
 \title{Unnest all list-cols in a data frame into columns}
 \usage{
-unnest_wide(df)
+unnest_wide(.data)
 }
 \arguments{
-\item{df}{A data frame.}
+\item{.data}{A data frame.}
 }
 \value{
 A tibble.
