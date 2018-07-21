@@ -13,25 +13,25 @@
 #'
 #' @return
 #' A tibble.
-unnest_wide <- function(df) {
-  stopifnot(is.data.frame(df))
-  df <- tibble::rowid_to_column(df)
-  lst_index <- purrr::map_int(df, is.list)
+unnest_wide <- function(.data) {
+  stopifnot(is.data.frame(.data))
+  .data <- tibble::rowid_to_column(.data)
+  lst_index <- purrr::map_int(.data, is.list)
   lst_cols <- names(lst_index)[lst_index == 1L]
   lst_vals <- paste0(lst_cols, ".")
   unique_vals <- list()
   df_lst <- list()
   for (i in seq_along(lst_cols)) {
     unique_vals[[i]] <- stats::na.omit(unique(unlist(df[[lst_cols[i]]])))
-    df_lst[[i]] <- dplyr::select(df, rowid, lst_cols[i])
+    df_lst[[i]] <- dplyr::select(.data, rowid, lst_cols[i])
     df_lst[[i]] <- dplyr::mutate(df_lst[[i]], !! lst_vals[i] := df[[lst_cols[i]]])
     df_lst[[i]] <- tidyr::unnest(df_lst[[i]])
     df_lst[[i]] <- dplyr::mutate(df_lst[[i]], !! lst_cols[i] := match(df_lst[[i]][[lst_cols[i]]], unique_vals[[i]]))
     df_lst[[i]] <- tidyr::spread(df_lst[[i]], !! lst_cols[i], !! lst_vals[i], convert = TRUE, sep = "_")
     df_lst[[i]] <- dplyr::select_if(df_lst[[i]], !grepl(paste0(lst_cols[i], "_NA"), colnames(df_lst[[i]])))
-    df <- dplyr::select(df, -(!! lst_cols[i]))
-    df <- dplyr::left_join(df, df_lst[[i]], by = "rowid")
+    .data <- dplyr::select(.data, -(!! lst_cols[i]))
+    .data <- dplyr::left_join(.data, df_lst[[i]], by = "rowid")
   }
-  df <- dplyr::select(df, -rowid)
-  return(df)
+  .data <- dplyr::select(.data, -rowid)
+  return(.data)
 }
