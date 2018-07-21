@@ -17,12 +17,12 @@
 whomp <- function(.list, ...) {
   vars <- names(.list[[1]])
   quos <- rlang::quos(...)
-  quos <- lapply(quos, rlang::env_bury, !!! helpers)
-  selected <- tidyselect::vars_select(vars, !!! quos)
+  quos <- lapply(quos, rlang::env_bury, !!!helpers)
+  selected <- tidyselect::vars_select(vars, !!!quos)
   ret <- purrr::map(.list, `[`, selected)
   for (i in seq_along(ret)) {
     ret[[i]] <- purrr::modify_if(ret[[i]], is.list, unlist)
-    ret[[i]] <- purrr::modify_if(ret[[i]], is.null, ~ NA)
+    ret[[i]] <- purrr::modify_if(ret[[i]], is.null, ~NA)
   }
   ret <- tibble::as_tibble(purrr::transpose(ret))
   max_length <<- vector(length = length(ret))

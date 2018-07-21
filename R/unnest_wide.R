@@ -24,12 +24,12 @@ unnest_wide <- function(.data) {
   for (i in seq_along(lst_cols)) {
     unique_vals[[i]] <- stats::na.omit(unique(unlist(df[[lst_cols[i]]])))
     df_lst[[i]] <- dplyr::select(.data, rowid, lst_cols[i])
-    df_lst[[i]] <- dplyr::mutate(df_lst[[i]], !! lst_vals[i] := df[[lst_cols[i]]])
+    df_lst[[i]] <- dplyr::mutate(df_lst[[i]], !!lst_vals[i] := df[[lst_cols[i]]])
     df_lst[[i]] <- tidyr::unnest(df_lst[[i]])
-    df_lst[[i]] <- dplyr::mutate(df_lst[[i]], !! lst_cols[i] := match(df_lst[[i]][[lst_cols[i]]], unique_vals[[i]]))
-    df_lst[[i]] <- tidyr::spread(df_lst[[i]], !! lst_cols[i], !! lst_vals[i], convert = TRUE, sep = "_")
+    df_lst[[i]] <- dplyr::mutate(df_lst[[i]], !!lst_cols[i] := match(df_lst[[i]][[lst_cols[i]]], unique_vals[[i]]))
+    df_lst[[i]] <- tidyr::spread(df_lst[[i]], !!lst_cols[i], !!lst_vals[i], convert = TRUE, sep = "_")
     df_lst[[i]] <- dplyr::select_if(df_lst[[i]], !grepl(paste0(lst_cols[i], "_NA"), colnames(df_lst[[i]])))
-    .data <- dplyr::select(.data, -(!! lst_cols[i]))
+    .data <- dplyr::select(.data, -(!!lst_cols[i]))
     .data <- dplyr::left_join(.data, df_lst[[i]], by = "rowid")
   }
   .data <- dplyr::select(.data, -rowid)
