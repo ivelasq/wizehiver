@@ -4,7 +4,7 @@
 \alias{whomp}
 \title{Whomp Zengine API lists into tibbles}
 \usage{
-whomp(.list)
+whomp(.list, ...)
 }
 \arguments{
 \item{.list}{A list of class \code{zengine} created by \code{get_zen()}.}

@@ -7,7 +7,7 @@
 #' @description
 #' `whomp()` transforms lists obtained from the Zengine API into analysis-ready tibbles.
 #' @usage
-#' whomp(.list)
+#' whomp(.list, ...)
 #'
 #' @param .list A list of class `zengine` created by `get_zen()`.
 #' @param ... A comma separated list of unquoted variable names. Tidyselect helpers are supported.
