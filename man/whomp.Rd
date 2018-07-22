@@ -9,7 +9,7 @@ whomp(.list, ...)
 \arguments{
 \item{.list}{A list of class \code{zengine} created by \code{get_zen()}.}
 
-\item{...}{A comma separated list of unquoted variable names. Tidyselect helpers are supported.}
+\item{...}{A comma separated list of unquoted variable names. \href{https://dplyr.tidyverse.org/reference/select_helpers.html}{Select helpers} from dplyr are supported.}
 }
 \value{
 A tibble.

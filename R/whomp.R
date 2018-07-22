@@ -10,7 +10,7 @@
 #' whomp(.list, ...)
 #'
 #' @param .list A list of class `zengine` created by `get_zen()`.
-#' @param ... A comma separated list of unquoted variable names. Tidyselect helpers are supported.
+#' @param ... A comma separated list of unquoted variable names. [Select helpers](https://dplyr.tidyverse.org/reference/select_helpers.html) from dplyr are supported.
 #'
 #' @return
 #' A tibble.
