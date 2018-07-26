@@ -57,5 +57,6 @@ get_zen <- function(resource, id = NULL, record = NULL, limit = NULL) {
     path = path,
     response = resp
   ),
-  class = "zengine")
+  class = "zengine"
+  )
 }

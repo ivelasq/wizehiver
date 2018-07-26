@@ -20,17 +20,15 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-Zengine™ from WizeHive is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes.
+wizehive is currently a **work in progress**.
 
-The goal of wizehiver is to build functionality to:
+The Zengine API, created by WizeHive, is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes. The goal of wizehiver is to build functionality to:
 
-1. Input and manage Zengine™ RESTful API tokens
-2. Input available API resources
-3. Execute API calls
-4. Process API request content
-5. Extract tibbles
+1. Input and manage Zengine RESTful API tokens
+2. Get available API resources
+3. Process API response content into analysis-ready tibbles
 
-This package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.
+The wizehiver package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.
 
 ## Installation
 
@@ -45,11 +43,11 @@ devtools::install_github("ivelasq/wizehiver")
 
 ### Get and store the API key
 
-Generate the Zengine API key from your [Zengine account page](https://platform.zenginehq.com/account/developer).
+Generate a Zengine API personal access token from your [Zengine account page](https://platform.zenginehq.com/account/developer).
 
-wizehiver functions will read the API key from environment variable ZENGINE_KEY. 
+wizehiver functions will read your Zengine API personal access token from the environment variable `ZENGINE_PAT` stored in `.Renviron`.
 
-To verify your Zengine API key, use function `get_key()`. If your Zengine API key is not stored in `.Renviron`, you will be able to create an .Renviron file in your home directory using function `set_key()`.
+To verify your access token is stored in `.Renviron`, use function `get_token()`. If `ZENGINE_PAT` is not stored in `.Renviron`, you will be prompted to edit it. You can also edit `.Renviron` by calling the function `set_token()` directly.
 
 ---
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
