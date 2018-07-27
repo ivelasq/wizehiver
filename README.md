@@ -5,7 +5,7 @@ wizehiver <img src= "https://image.ibb.co/hkekzT/hex_Sticker_nospot_copy.png" al
 
 [![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver) [![Coverage Status](https://img.shields.io/codecov/c/github/ivelasq/wizehiver/master.svg)](https://codecov.io/github/ivelasq/wizehiver?branch=master) [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-wizehive is currently a **work in progress**.
+wizehiver is currently a **work in progress**.
 
 The Zengine API, created by WizeHive, is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes. The goal of wizehiver is to build functionality to:
 
@@ -15,6 +15,10 @@ The Zengine API, created by WizeHive, is a cloud-based platform that can organiz
 
 The wizehiver package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.
 
+<!-- ![hive_gif](https://solvemymaths.files.wordpress.com/2014/10/tumblr_n5zoadz9ss1r2geqjo1_500.gif) -->
+<p align="center">
+<img src="https://solvemymaths.files.wordpress.com/2014/10/tumblr_n5zoadz9ss1r2geqjo1_500.gif" alt="hive_gif">
+</p>
 Installation
 ------------
 
@@ -32,9 +36,18 @@ Setup
 
 Generate a Zengine API personal access token from your [Zengine account page](https://platform.zenginehq.com/account/developer).
 
-wizehiver functions will read your Zengine API personal access token from the environment variable `ZENGINE_PAT` stored in `.Renviron`.
+wizehiver functions will read your Zengine API personal access token or key from the environment variable `ZENGINE_PAT` stored in `.Renviron`.
 
-To verify your access token is stored in `.Renviron`, use function `get_token()`. If `ZENGINE_PAT` is not stored in `.Renviron`, you will be prompted to edit it. You can also edit `.Renviron` by calling the function `set_token()` directly.
+If `ZENGINE_PAT` is not stored in `.Renviron`, you will be prompted to edit it. You can also edit `.Renviron` by calling the function `set_token()` or `set_key()` directly.
+
+To verify your access token or key is stored in `.Renviron`, use function `get_token()` or `get_key()`.
+
+Usage
+-----
+
+### Get massive Zengine API JSON response
+
+To obtain the Zengine API data, use `get_zen()`. Common choices include "forms" and "workspaces". A full list of resources is available [here](https://zenginehq.github.io/developers/rest-api/resources/).
 
 ------------------------------------------------------------------------
 
