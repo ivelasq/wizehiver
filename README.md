@@ -15,9 +15,9 @@ The Zengine API, created by WizeHive, is a cloud-based platform that can organiz
 
 The wizehiver package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.
 
-<!-- ![hive_gif](https://solvemymaths.files.wordpress.com/2014/10/tumblr_n5zoadz9ss1r2geqjo1_500.gif) -->
+<!-- ![hive_gif](http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200) -->
 <p align="center">
-<img src="https://solvemymaths.files.wordpress.com/2014/10/tumblr_n5zoadz9ss1r2geqjo1_500.gif" alt="hive_gif">
+<img src="http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200" alt="hive_gif">
 </p>
 Installation
 ------------
