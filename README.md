@@ -15,7 +15,6 @@ The Zengine API, created by WizeHive, is a cloud-based platform that can organiz
 
 The wizehiver package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.
 
-<!-- ![hive_gif](http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200) -->
 <p align="center">
 <img src="http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200" alt="hive_gif">
 </p>
@@ -48,6 +47,10 @@ Usage
 ### Get massive Zengine API JSON response
 
 To obtain the Zengine API data, use `get_zen()`. Common choices include "forms" and "workspaces". A full list of resources is available [here](https://zenginehq.github.io/developers/rest-api/resources/).
+
+<p align="center">
+<img src="https://media.giphy.com/media/pkzecz3ucmVaw/giphy.gif" alt="zen_gif">
+</p>
 
 ------------------------------------------------------------------------
 
