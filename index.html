@@ -73,7 +73,7 @@
 <a href="#wizehiver" class="anchor"></a>wizehiver <img src="https://image.ibb.co/hkekzT/hex_Sticker_nospot_copy.png" align="right">
 </h1></div>
 
-<p>wizehive is currently a <strong>work in progress</strong>.</p>
+<p>wizehiver is currently a <strong>work in progress</strong>.</p>
 <p>The Zengine API, created by WizeHive, is a cloud-based platform that can organize the collection, review, and management of data and applications for grants and other business processes. The goal of wizehiver is to build functionality to:</p>
 <ol style="list-style-type: decimal">
 <li>Input and manage Zengine RESTful API tokens</li>
@@ -81,6 +81,9 @@
 <li>Process API response content into analysis-ready tibbles</li>
 </ol>
 <p>The wizehiver package has no relationship or affiliation with, sponsorship, or endorsement by WizeHive.</p>
+<!-- ![hive_gif](https://solvemymaths.files.wordpress.com/2014/10/tumblr_n5zoadz9ss1r2geqjo1_500.gif) -->
+<p align="center">
+<img src="https://solvemymaths.files.wordpress.com/2014/10/tumblr_n5zoadz9ss1r2geqjo1_500.gif" alt="hive_gif"></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -95,8 +98,18 @@
 <h3 class="hasAnchor">
 <a href="#get-and-store-the-api-key" class="anchor"></a>Get and store the API key</h3>
 <p>Generate a Zengine API personal access token from your <a href="https://platform.zenginehq.com/account/developer">Zengine account page</a>.</p>
-<p>wizehiver functions will read your Zengine API personal access token from the environment variable <code>ZENGINE_PAT</code> stored in <code>.Renviron</code>.</p>
-<p>To verify your access token is stored in <code>.Renviron</code>, use function <code>get_token()</code>. If <code>ZENGINE_PAT</code> is not stored in <code>.Renviron</code>, you will be prompted to edit it. You can also edit <code>.Renviron</code> by calling the function <code>set_token()</code> directly.</p>
+<p>wizehiver functions will read your Zengine API personal access token or key from the environment variable <code>ZENGINE_PAT</code> stored in <code>.Renviron</code>.</p>
+<p>If <code>ZENGINE_PAT</code> is not stored in <code>.Renviron</code>, you will be prompted to edit it. You can also edit <code>.Renviron</code> by calling the function <code>set_token()</code> or <code>set_key()</code> directly.</p>
+<p>To verify your access token or key is stored in <code>.Renviron</code>, use function <code>get_token()</code> or <code>get_key()</code>.</p>
+</div>
+</div>
+<div id="usage" class="section level2">
+<h2 class="hasAnchor">
+<a href="#usage" class="anchor"></a>Usage</h2>
+<div id="get-massive-zengine-api-json-response" class="section level3">
+<h3 class="hasAnchor">
+<a href="#get-massive-zengine-api-json-response" class="anchor"></a>Get massive Zengine API JSON response</h3>
+<p>To obtain the Zengine API data, use <code>get_zen()</code>. Common choices include “forms” and “workspaces”. A full list of resources is available <a href="https://zenginehq.github.io/developers/rest-api/resources/">here</a>.</p>
 <hr>
 <p>Please note that this project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
 </div>
