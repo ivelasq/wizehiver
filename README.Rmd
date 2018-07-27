@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# wizehiver <img src= "https://image.ibb.co/bvfcUT/Webp_net_resizeimage.png" align = "right" />
+# wizehiver <img src= "https://image.ibb.co/hkekzT/hex_Sticker_nospot_copy.png" align = "right" />
 
 [![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver)
