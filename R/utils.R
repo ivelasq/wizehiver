@@ -1,5 +1,8 @@
 #' @keywords internal
 #' @noRd
+#' @importFrom rlang :=
+
+globalVariables("rowid")
 
 token_env <- new.env(parent = emptyenv())
 
