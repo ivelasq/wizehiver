@@ -8,6 +8,15 @@
 \description{
 An R wrapper for WizeHive's Zengine API.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://ivelasq.github.io/wizehiver}
+  \item \url{https://github.com/ivelasq/wizehiver}
+  \item Report bugs at \url{https://github.com/ivelasq/wizehiver/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Isabella Velásquez \email{ivelasq@gmail.com}
 
