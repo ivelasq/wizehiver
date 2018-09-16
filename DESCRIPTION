@@ -1,7 +1,7 @@
 Package: wizehiver
 Title: wizehiver: An R Wrapper for WizeHive's Zengine API
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     c(person(given = "Isabella",
              family = "Velásquez",
              role = c("aut", "cre"),
@@ -14,9 +14,9 @@ Description: An R wrapper for WizeHive's Zengine API.
 License: MIT + file LICENSE
 URL: https://ivelasq.github.io/wizehiver, https://github.com/ivelasq/wizehiver
 BugReports: https://github.com/ivelasq/wizehiver/issues
-Depends: 
+Depends:
     R (>= 3.5)
-Imports: 
+Imports:
     cli,
     crayon,
     dplyr,
@@ -30,12 +30,15 @@ Imports:
     tidyselect,
     usethis,
     utils
-Suggests: 
+Suggests:
     covr,
     pkgdown,
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
+VignetteBuilder: knitr
