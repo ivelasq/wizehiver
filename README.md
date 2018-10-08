@@ -18,9 +18,9 @@ The wizehiver package has no relationship or affiliation with, sponsorship, or e
 <p align="center">
 <img src="http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200" alt="hive_gif">
 </p>
-</p>
+
 Installation
-------------
+-----
 
 You can install the development version of wizehiver from [GitHub](https://github.com/) with:
 
