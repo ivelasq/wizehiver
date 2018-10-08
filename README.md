@@ -3,7 +3,7 @@
 wizehiver <img src= "https://image.ibb.co/hkekzT/hex_Sticker_nospot_copy.png" align = "right" />
 ================================================================================================
 
-[![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver) [![codecov](https://codecov.io/gh/ivelasq/wizehiver/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/wizehiver) [![CRAN status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver)
+[![Travis-CI Build Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver) [![codecov](https://codecov.io/gh/ivelasq/wizehiver/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/wizehiver)
 
 wizehiver is currently a **work in progress**.
 
@@ -17,6 +17,7 @@ The wizehiver package has no relationship or affiliation with, sponsorship, or e
 
 <p align="center">
 <img src="http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200" alt="hive_gif">
+</p>
 </p>
 Installation
 ------------
