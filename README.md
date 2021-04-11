@@ -7,9 +7,11 @@
 Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver)
-[![codecov](https://codecov.io/gh/ivelasq/wizehiver/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/wizehiver)
+[![Codecov test
+coverage](https://codecov.io/gh/ivelasq/wizehiver/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/wizehiver?branch=master)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/wizehiver)](https://cran.r-project.org/package=wizehiver)
+[![R-CMD-check](https://github.com/ivelasq/wizehiver/workflows/R-CMD-check/badge.svg)](https://github.com/ivelasq/wizehiver/actions)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 wizehiver is currently a **work in progress**.
@@ -21,14 +23,7 @@ build functionality to:
 
 1.  Input and manage Zengine RESTful API tokens
 2.  Get available API resources
-3.  Process API response content into analysis-ready
-tibbles
-
-<p align="center">
-
-<img src="http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pixels/Pixels%2050/tha001.gif~c200" alt="hive_gif">
-
-</p>
+3.  Process API response content into analysis-ready tibbles
 
 The wizehiver package has no relationship or affiliation with,
 sponsorship, or endorsement by WizeHive.
@@ -69,12 +64,10 @@ To obtain the Zengine API data, use `get_zen()`. Common choices include
 [here](https://zenginehq.github.io/developers/rest-api/resources/).
 
 <p align="center">
-
 <img src="https://media.giphy.com/media/pkzecz3ucmVaw/giphy.gif" alt="zen_gif">
-
 </p>
 
------
+------------------------------------------------------------------------
 
 Please note that this project is released with a [Contributor Code of
 Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
