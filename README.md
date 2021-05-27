@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wizehiver <img src= "https://image.ibb.co/hkekzT/hex_Sticker_nospot_copy.png" align = "right" />
+# wizehiver <img src='man/figures/logo.png' align="right" height="150" />
 
 [![Travis-CI Build
 Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver)
