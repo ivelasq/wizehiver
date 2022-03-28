@@ -3,10 +3,6 @@
 
 # wizehiver <img src='man/figures/logo.png' align="right" height="150" />
 
-[![Travis-CI Build
-Status](https://travis-ci.org/ivelasq/wizehiver.svg?branch=master)](https://travis-ci.org/ivelasq/wizehiver)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/ivelasq/wizehiver?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/wizehiver)
 [![Codecov test
 coverage](https://codecov.io/gh/ivelasq/wizehiver/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/wizehiver?branch=master)
 [![CRAN
